@@ -8,12 +8,12 @@
 import SwiftUI
 
 public struct NetworkAvailabilityView: View {
-    var networkMonitor: NetworkAvailabilityMonitor
+    @StateObject var networkMonitor: NetworkAvailabilityMonitor
     var text: String
     var warningColor: Color
     
-    public init(text: String = "Problem with internet", warningColor: Color = .red, networkMonitor: NetworkAvailabilityMonitor = NetworkAvailabilityMonitor()) {
-        self.networkMonitor = networkMonitor
+    public init(text: String = "Problem with internet", warningColor: Color = .red, networkMonitor: NetworkAvailabilityMonitor =  NetworkAvailabilityMonitor()) {
+        _networkMonitor = StateObject(wrappedValue: networkMonitor)
         self.text = text
         self.warningColor = warningColor
     }
@@ -26,9 +26,10 @@ public struct NetworkAvailabilityView: View {
                         .foregroundColor(warningColor)
                 }
                 .padding()
+                .frame(maxWidth: .infinity, maxHeight: 50)
             }
         }
-        .frame(maxWidth: .infinity, maxHeight: 50)
+        
     }
 }
 

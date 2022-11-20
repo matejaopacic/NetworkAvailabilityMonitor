@@ -9,10 +9,10 @@ public class NetworkAvailabilityMonitor: ObservableObject{
     public init(isConnected: Bool = false) {
         self.isConnected = isConnected
         networkMonitor.pathUpdateHandler = {path in
-            self.isConnected = path.status == .satisfied
             Task{
                 await MainActor.run{
                     self.objectWillChange.send()
+                    self.isConnected = path.status == .satisfied
                 }
             }
         }
