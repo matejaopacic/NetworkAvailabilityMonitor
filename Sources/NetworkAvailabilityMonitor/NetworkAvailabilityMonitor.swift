@@ -11,8 +11,8 @@ public class NetworkAvailabilityMonitor: ObservableObject{
         networkMonitor.pathUpdateHandler = {path in
             Task{
                 await MainActor.run{
-                    self.objectWillChange.send()
                     self.isConnected = path.status == .satisfied
+                    self.objectWillChange.send()
                 }
             }
         }

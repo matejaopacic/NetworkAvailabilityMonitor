@@ -26,9 +26,10 @@ public struct NetworkAvailabilityView: View {
                         .foregroundColor(warningColor)
                 }
                 .padding()
-                .frame(maxWidth: .infinity, maxHeight: 50)
+                .frame(maxWidth: .infinity)
             }
         }
+        .foregroundColor(Color.clear)
         
     }
 }
