@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct NetworkAvabilityExampleApp: App {
+    @StateObject private var networkAvabilityMonitor = NetworkAvailabilityMonitor()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

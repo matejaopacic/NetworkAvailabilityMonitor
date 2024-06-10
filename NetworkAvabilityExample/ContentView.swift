@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
+        
         VStack {
+            NetworkAvailabilityView()
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)

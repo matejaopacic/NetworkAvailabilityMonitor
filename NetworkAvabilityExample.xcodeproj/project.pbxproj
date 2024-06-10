@@ -11,6 +11,7 @@
 		D2484C75292A8A820099B0A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484C74292A8A820099B0A3 /* ContentView.swift */; };
 		D2484C77292A8A820099B0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2484C76292A8A820099B0A3 /* Assets.xcassets */; };
 		D2484C7A292A8A820099B0A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2484C79292A8A820099B0A3 /* Preview Assets.xcassets */; };
+		D2484C81292A8CFB0099B0A3 /* NetworkAvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2484C80292A8CFB0099B0A3 /* NetworkAvailabilityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D2484C74292A8A820099B0A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2484C76292A8A820099B0A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2484C79292A8A820099B0A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2484C80292A8CFB0099B0A3 /* NetworkAvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAvailabilityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D2484C72292A8A820099B0A3 /* NetworkAvabilityExampleApp.swift */,
 				D2484C74292A8A820099B0A3 /* ContentView.swift */,
+				D2484C80292A8CFB0099B0A3 /* NetworkAvailabilityView.swift */,
 				D2484C76292A8A820099B0A3 /* Assets.xcassets */,
 				D2484C78292A8A820099B0A3 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				D2484C75292A8A820099B0A3 /* ContentView.swift in Sources */,
 				D2484C73292A8A820099B0A3 /* NetworkAvabilityExampleApp.swift in Sources */,
+				D2484C81292A8CFB0099B0A3 /* NetworkAvailabilityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
